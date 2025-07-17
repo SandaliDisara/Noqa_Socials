@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* === Font Face Definitions === */
+@font-face {
+  font-family: 'Brume';
+  src: url('./assets/fonts/Brume-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Caveat';
+  src: url('./assets/fonts/Caveat.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('./assets/fonts/Jost-SemiBold.ttf') format('truetype');
+}
+
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: 'Brume', serif;
+  background-color: #c8936b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+/* Optional: Keep code style block */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+.page {
+  font-family: 'Brume', serif;
+  background-color: #fff8f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.top-section {
+  position: relative;
+  width: 100%;
+  height: 140px; /* fixed height for checkered image */
+}
+
+.top-pattern {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.logo-wrapper {
+  width: 120px;
+  height: 120px;
+  background-color: #BE9371;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -60px; /* half of the logo height */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+.noqa-logo {
+  width: 70%;
+  height: auto;
+}
+
+.subtitle {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  font-weight: 600;
+  color: #BE9371;
+  margin: 90px 0 30px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 80%;
+  max-width: 320px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+}
+
+.social-button {
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+
+  padding: 12px;
+  border: 2px solid #BE9371;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #c8936b;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #f6e8de;
 }
