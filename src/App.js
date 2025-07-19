@@ -35,6 +35,19 @@ function App() {
           </a>
         ))}
       </div>
+
+      <hr className="divider" />
+
+      <div className="button-group">
+        <a
+  className="social-button feedback-button"
+  href="https://docs.google.com/forms/d/e/1FAIpQLScdus87GkeiSPjHjXuCFCoALMx0ls3JOxW7gCaYm-4o-9R1Xw/viewform?usp=dialog"
+  target="_blank"
+  rel="noreferrer"
+>
+  Give Feedback
+</a>
+      </div>
     </div>
   );
 }
